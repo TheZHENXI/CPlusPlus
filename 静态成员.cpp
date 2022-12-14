@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-//¾²Ì¬³ÉÔ±±äÁ¿
+//é™æ€æˆå‘˜å˜é‡
 class Person
 {
-	//1.ËùÓÐ¶ÔÏó¹²ÏíÍ¬Ò»·ÝÊý¾Ý
-	//2.±àÒë½×¶Î¾ÍÍê³ÉÄÚ´æ·ÖÅä
-	//3.ÀàÄÚÉùÃ÷£¬ÀàÍâ³õÊ¼»¯
+	//1.æ‰€æœ‰å¯¹è±¡å…±äº«åŒä¸€ä»½æ•°æ®
+	//2.ç¼–è¯‘é˜¶æ®µå°±å®Œæˆå†…å­˜åˆ†é…
+	//3.ç±»å†…å£°æ˜Žï¼Œç±»å¤–åˆå§‹åŒ–
 public:
 	static int m_A;
 private:
@@ -17,16 +17,16 @@ int Person::m_B = 200;
 void test01()
 {
 	Person p1;
-	//¾²Ì¬³ÉÔ±·ÃÎÊ·½Ê½
-	//1.Í¨¹ý¶ÔÏó·ÃÎÊ
-	//2.Í¨¹ýÀàÃû·ÃÎÊ
+	//é™æ€æˆå‘˜è®¿é—®æ–¹å¼
+	//1.é€šè¿‡å¯¹è±¡è®¿é—®
+	//2.é€šè¿‡ç±»åè®¿é—®
 	cout << p1.m_A << endl;
 	cout << Person::m_A << endl;
 	cout << &p1.m_A << endl;
 
 	Person p2;
 	p2.m_A = 200;
-	//p2.m_B = 300;//¾²Ì¬³ÉÔ±Ò²¿ÉÒÔÉèÖÃ·ÃÎÊÈ¨ÏÞ
+	//p2.m_B = 300;//é™æ€æˆå‘˜ä¹Ÿå¯ä»¥è®¾ç½®è®¿é—®æƒé™
 	cout << p1.m_A << endl;
 	cout << &p2.m_A << endl;
 }
@@ -36,3 +36,4 @@ int main()
 	system("pause");
 	return 0;
 }
+
